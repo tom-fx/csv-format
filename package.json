@@ -1,0 +1,14 @@
+{
+  "name": "csv-format",
+  "version": "1.0.0",
+  "description": "Script to reformat csv file",
+  "main": "csv-format.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomas Meaney",
+  "license": "ISC",
+  "bin": {
+    "csv-format": "./csv-format.js"
+  }
+}
