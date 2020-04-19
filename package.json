@@ -4,11 +4,14 @@
   "description": "Script to reformat csv file",
   "main": "csv-format.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Thomas Meaney",
   "license": "ISC",
   "bin": {
     "csv-format": "./csv-format.js"
+  },
+  "devDependencies": {
+    "jest": "^25.3.0"
   }
 }
