@@ -6,3 +6,9 @@ Prettify csv files
 ```shell
 npm install csv-format --global
 ```
+
+## Usage
+
+```shell
+csv-format **.csv
+```
