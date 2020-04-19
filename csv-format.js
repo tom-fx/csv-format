@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 // Script to reformat csv file by adding space and newline
 const fs    = require('fs'),
       async = require('async');
