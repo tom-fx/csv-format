@@ -8,10 +8,10 @@ const writeStream = fs.createWriteStream('./output.csv', {flags: 'a'});
 const pathToFile = process.argv.slice(2, 3).toString();
 
 fs.truncate('./output.csv', 0, (error) => {
-  if (error) console.log('Error clearing output file');
+  if (error) return error;
 
   fs.readFile(pathToFile, 'utf8', (error, data) => {
-    if (error) console.log('File read error: ', error);
+    if (error) return error;
 
     const inputArray = data.split(',');
     writeStream.write('Email Address, \n');
@@ -19,7 +19,7 @@ fs.truncate('./output.csv', 0, (error) => {
       writeStream.write(email + ', \n');
       callback();
     }, (error) => {
-      if (error) console.log('Error writing to file: ', error);
+      if (error) return error;
 
       console.log('Operation completed');
       writeStream.end();
