@@ -1,5 +1,5 @@
 # csv-format
-Prettify csv files
+Format csv files
 
 ## Installation
 ```shell
